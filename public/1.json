@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "홍길동",
+      "avatarUrl": "https://avatar.iran.liara.run/public/boy?username=john"
+    },
+    {
+      "id": 2,
+      "name": "https://avatar.iran.liara.run/public/boy?username=jessi"
+    }
+  ],
+  "chat": [
+    {
+      "id": 1,
+      "userId": null,
+      "content": "잘 들어가셨어요?",
+      "date": "2024-10-24 23:01:22"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "content": "네ㅎㅎ",
+      "date": "2024-10-24 23:01:23"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "content": "방금 집 도착했어요",
+      "date": "2024-10-24 23:01:23"
+    },
+    {
+      "id": 4,
+      "userId": null,
+      "content": "오늘 정말 즐거웠어요",
+      "date": "2024-10-24 23:01:23"
+    },
+    {
+      "id": 5,
+      "userId": null,
+      "content": "다음 주에 시간 괜찮으시면 영화 어떠세요?",
+      "date": "2024-10-24 23:01:24"
+    }
+  ]
+}

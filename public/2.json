@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "나영희",
+      "avatarUrl": "https://avatar.iran.liara.run/public/girl?username=olivia"
+    }
+  ],
+  "chat": [
+    {
+      "id": 1,
+      "userId": null,
+      "content": "남자들은 여자 디게좋아하는데",
+      "date": "2024-10-24 23:01:22"
+    },
+    {
+      "id": 2,
+      "userId": null,
+      "content": "여자랑 술마시는것도 재밋고ㅋ",
+      "date": "2024-10-24 23:01:22"
+    },
+    {
+      "id": 3,
+      "userId": null,
+      "content": "여자들은 남자랑노는걸\n왜안즐기지?",
+      "date": "2024-10-24 23:01:22"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "content": "아닌데ㅋ",
+      "date": "2024-10-24 23:01:23"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "content": "나도 남자랑 놀고\n술먹으면재밌던데ㅋ",
+      "date": "2024-10-24 23:01:23"
+    },
+    {
+      "id": 6,
+      "userId": null,
+      "content": "그래?",
+      "date": "2024-10-24 23:01:23"
+    },
+    {
+      "id": 7,
+      "userId": null,
+      "content": "그럼 술마실래?ㅋㅋㅋ",
+      "date": "2024-10-24 23:01:24"
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "content": "아니ㅋㅋㅋㅋ나술끊음ㅠㅠ",
+      "date": "2024-10-24 23:01:24"
+    },
+    {
+      "id": 9,
+      "userId": null,
+      "content": "아진짜?ㅋㅋㅋ",
+      "date": "2024-10-24 23:01:24"
+    },
+    {
+      "id": 10,
+      "userId": null,
+      "content": "건강챙겨야지ㅇㅇㅋ",
+      "date": "2024-10-24 23:01:24"
+    }
+  ]
+}
