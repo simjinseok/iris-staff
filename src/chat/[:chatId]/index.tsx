@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowUpIcon, ChevronLeftIcon, SearchIcon } from "lucide-react";
 
 export default function ChatDetail() {
   const { chatId } = useParams();
 
+  const stepRef = useRef(0);
   const [step, setStep] = useState<number>(0);
   const [title, setTitle] = useState("");
   const [users, setUsers] = useState([]);
@@ -21,7 +22,7 @@ export default function ChatDetail() {
   }, [chatId]);
 
   return (
-    <div className="h-full flex flex-col bg-[#B2C8D8]">
+    <div className="min-h-full flex flex-col bg-[#B2C8D8]">
       <div className="sticky top-0 py-1 flex justify-between border-b border-gray-300">
         <div>
           <Link to="/">
@@ -37,26 +38,38 @@ export default function ChatDetail() {
           </button>
         </div>
       </div>
-      <ul className="px-3 py-3 grow flex flex-col gap-1.5">
-        {chat
-          .filter((d, idx) => idx < step)
-          .map((c, idx) => (
-            <Content
-              key={`content-${c.id}`}
-              chat={chat}
-              users={users}
-              contentObj={c}
-              idx={idx}
-            />
-          ))}
+      <ul
+        className="px-3 py-3 grow flex flex-col gap-1.5"
+        onClick={(event) => {
+          if (stepRef.current >= chat.length) {
+            const inputElement = document.getElementById("chat-input");
+            inputElement.setAttribute("placeholder", "종료");
+            inputElement.style.backgroundColor = "gray";
+          }
+
+          const currentChat = event.currentTarget.children[stepRef.current];
+          currentChat.classList.remove("hidden");
+          currentChat.scrollIntoView({ behavior: "smooth" });
+          stepRef.current = stepRef.current + 1;
+        }}
+      >
+        {chat.map((c, idx) => (
+          <Content
+            key={`content-${c.id}`}
+            chat={chat}
+            users={users}
+            contentObj={c}
+            idx={idx}
+          />
+        ))}
       </ul>
-      <div className="sticky bottom-0 px-1 pt-1 pb-1 flex items-center gap-2">
-        <input placeholder="다음" className="grow px-3 rounded-[20px]" />
-        <button
-          type="button"
-          className="p-1 rounded-full bg-yellow-400"
-          onClick={() => setStep((prev) => prev + 1)}
-        >
+      <div className="sticky bottom-0 px-1 pt-1 pb-1 flex items-center gap-2 bg-inherit">
+        <input
+          id="chat-input"
+          placeholder="다음"
+          className="grow px-3 rounded-[20px]"
+        />
+        <button type="button" className="p-1 rounded-full bg-yellow-400">
           <ArrowUpIcon width={16} height={16} strokeWidth={3} />
         </button>
       </div>
@@ -69,7 +82,7 @@ function Content({ contentObj, idx, chat, users }) {
   const user = users.find((user) => user.id === contentObj.userId);
 
   return (
-    <li className="pl-12">
+    <li className="pl-12 hidden">
       {!isContinue && user && (
         <div className="">
           <img

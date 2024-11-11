@@ -3,7 +3,6 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import ChatDetail from "./chat/[:chatId]";
 
 export default function App() {
-  const [step, setStep] = useState<number>(0);
 
   return (
     <BrowserRouter>
