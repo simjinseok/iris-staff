@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { ArrowUpIcon, ChevronLeftIcon, SearchIcon } from "lucide-react";
 
 export default function ChatDetail() {
@@ -24,9 +24,9 @@ export default function ChatDetail() {
     <div className="h-full flex flex-col bg-[#B2C8D8]">
       <div className="sticky top-0 py-1 flex justify-between border-b border-gray-300">
         <div>
-          <button type="button">
+          <Link to="/">
             <ChevronLeftIcon />
-          </button>
+          </Link>
         </div>
         <div className="absolute flex top-0 bottom-0 items-center left-[50%] translate-x-[-50%]">
           <h2 className="text-[20px] font-bold">{title}</h2>
