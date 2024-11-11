@@ -11,7 +11,7 @@ export default function ChatDetail() {
   const [chat, setChat] = useState([]);
 
   useEffect(() => {
-    fetch(`/public/${chatId}.json`)
+    fetch(`/${chatId}.json`)
       .then((res) => res.json())
       .then((result) => {
         setTitle(result.title);
