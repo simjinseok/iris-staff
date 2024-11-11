@@ -1,0 +1,57 @@
+{
+  "title": "코인방",
+  "users": [{
+    "id": 1,
+    "name": "프렌즈",
+    "avatarUrl": "https://avatar.iran.liara.run/public/boy?username=Scott"
+  }, {
+    "id": 2,
+    "name": "선장",
+    "avatarUrl": "https://avatar.iran.liara.run/public/boy?username=ship"
+  }, {
+    "id": 3,
+    "name": "프로도",
+    "avatarUrl": "https://avatar.iran.liara.run/public/boy?username=prodo"
+  }],
+  "chat": [{
+    "id": 1,
+    "userId": 1,
+    "content": "팔아야되나요ㅜㅜ반의반 토막이네요"
+  }, {
+    "id": 2,
+    "userId": 2,
+    "content": "전 이미 익절했어요"
+  }, {
+    "id": 3,
+    "userId": 3,
+    "content": "씨발년아 말을 해주던가. 니 혼자 말도 없이 쳐 뺄거면 단톡을 왜만들어 이 씹새끼야"
+  }, {
+    "id": 4,
+    "userId": 2,
+    "content": "욕설자제좀요!! 힘든건 본인 뿐만아닙니다!!"
+  }, {
+    "id": 5,
+    "userId": 3,
+    "content": "저 씨발놈 지가 존버하자해놓고"
+  }, {
+    "id": 6,
+    "userId": 3,
+    "content": "혼자쳐빼네"
+  }, {
+    "id": 7,
+    "userId": 3,
+    "content": "개같은새끼야"
+  }, {
+    "id": 8,
+    "userId": 2,
+    "content": "어린 노무 새끼가 말 꼬낙서니보소"
+  }, {
+    "id": 9,
+    "userId": 2,
+    "content": "너몇살이냐"
+  }, {
+    "id": 10,
+    "userId": 3,
+    "content": "허벅지살이다 이 씹새끼야"
+  }]
+}

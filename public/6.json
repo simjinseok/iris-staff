@@ -1,0 +1,41 @@
+{
+  "title": "현아",
+  "users": [{
+    "id": 1,
+    "name": "현아",
+    "avatarUrl": "https://avatar.iran.liara.run/public/girl?username=hyuna"
+  }],
+  "chat": [{
+    "id": 1,
+    "userId": 1,
+    "content": "오빠, 지금 시간 되시나요?"
+  }, {
+    "id": 2,
+    "userId": null,
+    "content": "왜 그래? 뭔일있니?"
+  }, {
+    "id": 3,
+    "userId": 1,
+    "content": "제가 오빠한테 하고 싶은 말이 있어서요\n사실 예전부터 하고 싶었는데 말할 타이밍을 못잡아서...."
+  }, {
+    "id": 4,
+    "userId": null,
+    "content": "응 뭔대?"
+  }, {
+    "id": 5,
+    "userId": 1,
+    "content": "사실 저 오빠 좋아해요\n이런말 직접 만나뵈서 해야하는 말인데, 부끄러워서 못하겠네요 ㅠ\n실례가 안돼시면 저랑 사귀어 주실수 있어요?"
+  }, {
+    "id": 6,
+    "userId": null,
+    "content": "고마워 현아야, 사실 나도 예전부터 널 좋아했어ㅎㅎ"
+  }, {
+    "id": 7,
+    "userId": 1,
+    "content": "미안해요 오빠, 친구들이랑 벌칙게임 한다고ㅎㅎ"
+  }, {
+    "id": 8,
+    "userId": 1,
+    "content": "마음은 고마운대 저 사귀는 사람 있어서ㅎㅎ"
+  }]
+}

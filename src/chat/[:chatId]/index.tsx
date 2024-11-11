@@ -6,6 +6,7 @@ export default function ChatDetail() {
   const { chatId } = useParams();
 
   const [step, setStep] = useState<number>(0);
+  const [title, setTitle] = useState("");
   const [users, setUsers] = useState([]);
   const [chat, setChat] = useState([]);
 
@@ -13,6 +14,7 @@ export default function ChatDetail() {
     fetch(`/public/${chatId}.json`)
       .then((res) => res.json())
       .then((result) => {
+        setTitle(result.title);
         setUsers(result.users);
         setChat(result.chat);
       });
@@ -27,7 +29,7 @@ export default function ChatDetail() {
           </button>
         </div>
         <div className="absolute flex top-0 bottom-0 items-center left-[50%] translate-x-[-50%]">
-          <h2 className="text-[20px] font-bold">소개남</h2>
+          <h2 className="text-[20px] font-bold">{title}</h2>
         </div>
         <div>
           <button type="button">
@@ -79,7 +81,7 @@ function Content({ contentObj, idx, chat, users }) {
         </div>
       )}
       <p
-        className="w-fit px-2 py-1 rounded-[12px] bg-white data-[me]:bg-yellow-400 data-[me]:ml-auto whitespace-pre"
+        className="w-fit max-w-[80%] px-2 py-1 rounded-[12px] bg-white data-[me]:bg-yellow-400 data-[me]:ml-auto whitespace-pre-wrap"
         data-me={contentObj.userId === null ? "" : undefined}
       >
         {contentObj.content}
